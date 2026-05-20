@@ -100,11 +100,10 @@ textarea{width:100%;min-height:58px;border:1.5px solid #D3D1C7;border-radius:8px
 .coach-l{font-size:13px;color:#854F0B;line-height:1.7}
 </style>
 
-<h2 class="sr-only">CIY.CLUB Myanmar — 18-Session AI and Python Project Curriculum. 5 projects across 18 self-paced sessions for students aged 7–16.</h2>
 
 <div class="hero">
   <div class="hero-logo">CIY.CLUB Myanmar</div>
-  <div class="hero-title">AI + Python Project Curriculum</div>
+  <div class="hero-title">Specialised AI</div>
   <div class="hero-sub">In these 18 sessions you will build 5 real AI projects. Work at your own pace. Use Gemini to research. Write answers in your own words. Ask your coach only if stuck for more than 5 minutes.</div>
   <div class="hero-meta">
     <span class="hero-pill"><i class="ti ti-user" aria-hidden="true"></i> Coach Penny</span>
@@ -207,7 +206,7 @@ print(df[["text","clean"]].head(5))</div>Look at the before/after. What changed?
 ]}
 ],
 quiz:[{q:"What is sentiment analysis? Explain it in 2 sentences as if explaining to a younger student.",kw:"positive"},{q:"Look at your clean text column. What 3 things does your clean_text function do, in order? No code — plain English.",kw:"lower"},{q:"Why do we remove stopwords? Give one reason it helps an AI model.",kw:""}],
-done:["Dataset created with 16+ reviews in Colab","clean_text function written and working","Explored df.shape and value_counts","All 3 quiz answers written","Show Coach Penny your notebook"],
+done:["Dataset created with 16+ reviews in Colab","clean_text function written and working","Explored df.shape and value_counts","All 3 quiz answers written","Show coach your notebook"],
 coach:"Check: student has ≥16 rows, balanced labels, clean column visible. Quiz Q1 should mention positive/negative classification. Q2 should mention lowercase + punctuation + stopwords."},
 
 {proj:0,num:2,icon:"🎭",title:"Sentiment Analyzer — turning text into numbers and training",desc:"Today you convert your clean text into numbers that an AI can learn from, then train your first real classifier.",time:["0–10 min: Research","10–45 min: Vectorize","45–68 min: Train model","68–75 min: Quiz"],
@@ -262,7 +261,7 @@ print(predict_sentiment("Not bad at all"))</div>Try at least 5 sentences of your
 ]}
 ],
 quiz:[{q:"What does fit_transform do? Explain 'fit' and 'transform' separately in plain English.",kw:"fit"},{q:"Your model may not be 100% accurate. Name 2 reasons why it might make mistakes.",kw:""},{q:"What is the difference between X_train and X_test? Why do we need both?",kw:"train"}],
-done:["Text vectorized, matrix shape printed","Model trained, accuracy printed","Tested with 5+ custom sentences","Found at least 1 sentence that confused the model","All 3 quiz answers written","Show Coach Penny: accuracy + custom predictions"],
+done:["Text vectorized, matrix shape printed","Model trained, accuracy printed","Tested with 5+ custom sentences","Found at least 1 sentence that confused the model","All 3 quiz answers written","Show coach: accuracy + custom predictions"],
 coach:"Expected accuracy: 60–90% given small dataset. Ask student to verbally explain what fit_transform does. Red flag if student cannot explain train/test split."},
 
 {proj:0,num:3,icon:"🎭",title:"Sentiment Analyzer — improve it + build a simple interface",desc:"Your model works. Now you will make it better and add a simple way for anyone to use it without looking at code.",time:["0–15 min: Improve data","15–45 min: TF-IDF upgrade","45–68 min: Simple UI","68–75 min: Quiz"],
@@ -301,7 +300,7 @@ analyze_sentiment("I am so disappointed with everything")</div><div class="think
 ]}
 ],
 quiz:[{q:"What is TF-IDF? How is it different from just counting words?",kw:""},{q:"Your model shows 65% confidence on a prediction. What does that mean? Is 65% good or bad?",kw:""},{q:"Name 2 ways you could improve this sentiment analyzer further. Research in Gemini if needed.",kw:""}],
-done:["TF-IDF vectorizer working","Accuracy compared: CountVectorizer vs TF-IDF","analyze_sentiment function with confidence score","Project summary text cell written in Colab","Show Coach Penny the full working notebook"],
+done:["TF-IDF vectorizer working","Accuracy compared: CountVectorizer vs TF-IDF","analyze_sentiment function with confidence score","Project summary text cell written in Colab","Show coach the full working notebook"],
 coach:"Key check: student should understand more data = better model. Ask them to explain TF-IDF vs CountVectorizer verbally. The text summary cell is mandatory."},
 
 {proj:1,num:4,icon:"📈",title:"Prediction Model — understanding regression",desc:"Sentiment analysis predicts a category. Now you'll build a model that predicts a NUMBER — like a test score or a house price. This is called regression.",time:["0–15 min: Concept research","15–50 min: Create dataset","50–68 min: Explore data","68–75 min: Quiz"],
@@ -357,7 +356,7 @@ plt.show()</div><div class="think-b">🤔 <strong>Think:</strong> If the dots go
 ]}
 ],
 quiz:[{q:"What is the difference between classification and regression? Give one example of each.",kw:"number"},{q:"Looking at your scatter plots, which feature seems most important for predicting score? How can you tell from the graph?",kw:""},{q:"What does np.clip(score, 0, 100) do in the code? Why is it important here?",kw:""}],
-done:["score_predictor.ipynb created with 50 rows","describe() output explored","3 scatter plots created","Quiz answers written","Show Coach Penny: which feature looks most predictive"],
+done:["score_predictor.ipynb created with 50 rows","describe() output explored","3 scatter plots created","Quiz answers written","Show coach: which feature looks most predictive"],
 coach:"Students should understand scatter plots intuitively. Ask student to point to the plot showing the strongest pattern."},
 
 {proj:1,num:5,icon:"📈",title:"Prediction Model — training and evaluating Linear Regression",desc:"Time to train a model that predicts numbers. You will also learn how to measure if a regression model is any good.",time:["0–10 min: Research metrics","10–50 min: Train model","50–68 min: Evaluate","68–75 min: Quiz"],
@@ -444,7 +443,7 @@ print("NEW MAE:", round(mean_absolute_error(y_te2, preds2), 2))</div>Did adding 
 ]}
 ],
 quiz:[{q:"What is feature engineering? Why might creating new features improve a model?",kw:"feature"},{q:"Did your model get better or worse after adding new features? What does that tell you?",kw:""},{q:"Name one limitation of your prediction model. What kind of data would make it less accurate?",kw:""}],
-done:["3 new features created and added","Model 1 vs Model 2 MAE compared","Project report text cell written","All quiz answers completed","Show Coach Penny: before/after MAE comparison"],
+done:["3 new features created and added","Model 1 vs Model 2 MAE compared","Project report text cell written","All quiz answers completed","Show coach: before/after MAE comparison"],
 coach:"Feature engineering is the key concept. Ensure student can explain why total_prep might be more meaningful than hours_studied alone. Project report is mandatory before moving to Project 3."},
 
 {proj:2,num:7,icon:"🖼️",title:"Image Recognition — understanding how AI sees images",desc:"How does an AI know that a photo contains a cat? Today you learn the concepts behind image recognition before writing any code.",time:["0–20 min: Deep research","20–50 min: Load images","50–68 min: Display & explore","68–75 min: Quiz"],
@@ -490,7 +489,7 @@ for rank, (id, label, confidence) in enumerate(top3, 1):
 ]}
 ],
 quiz:[{q:"What is a pixel? How does a computer represent a colour image as numbers?",kw:"number"},{q:"What does 'pre-trained' mean? Why is using MobileNetV2 better than training from scratch?",kw:"train"},{q:"Your model outputs confidence percentages. If it says 'cat: 43%' and 'dog: 38%', what does this mean? Is it certain?",kw:""}],
-done:["TensorFlow and MobileNetV2 loaded","At least 1 image classified with top-3 predictions","Quiz answers written","Show Coach Penny: image + predictions output"],
+done:["TensorFlow and MobileNetV2 loaded","At least 1 image classified with top-3 predictions","Quiz answers written","Show coach: image + predictions output"],
 coach:"Ensure student genuinely understands they're using a model trained on 1.2M images, not training from scratch. Many students just run the code — verify the concept."},
 
 {proj:2,num:8,icon:"🖼️",title:"Image Recognition — classify multiple images and find limits",desc:"Now you build a proper image classifier that tests multiple images and explores what the model gets right and what it struggles with.",time:["0–10 min: Research","10–55 min: Multi-image classifier","55–68 min: Test limits","68–75 min: Quiz"],
@@ -533,7 +532,7 @@ classify_image("dark.jpg")</div><div class="gem-b">🔍 <strong>Research:</stron
 ]}
 ],
 quiz:[{q:"From your experiments: describe 2 types of images that confused the model. Why do you think it failed on those?",kw:""},{q:"What does a confidence of 95% vs 51% tell you? Give an example of when 51% could be a real problem.",kw:"confiden"},{q:"MobileNetV2 was trained on 1,000 categories. If you showed it a very rare animal it never saw in training, what would happen?",kw:""}],
-done:["classify_image function built and working","5 images tested, results recorded","Rotation and darkness experiments done","Written analysis of model strengths and failures","Show Coach Penny: at least one wrong prediction with explanation"],
+done:["classify_image function built and working","5 images tested, results recorded","Rotation and darkness experiments done","Written analysis of model strengths and failures","Show coach: at least one wrong prediction with explanation"],
 coach:"Goal is critical thinking about model limitations. Ask: 'If this model was used in a hospital to identify diseases in scans, what are the risks?' Connect confidence scores to real-world consequences."},
 
 {proj:2,num:9,icon:"🖼️",title:"Image Recognition — build a custom category detector",desc:"MobileNetV2 knows 1,000 categories. But what if you want to detect something specific? Today you build a simple custom classifier using transfer learning.",time:["0–15 min: Research","15–55 min: Custom classifier","55–68 min: Test","68–75 min: Project summary"],
@@ -583,14 +582,14 @@ print("Custom classifier trained!")</div>`},
 ]}
 ],
 quiz:[{q:"What is transfer learning? Explain it using an analogy (not a technical definition).",kw:"learn"},{q:"Why did we use MobileNetV2 as a feature extractor instead of just using it directly?",kw:""},{q:"Your custom classifier only had 6 images per category. What are 2 problems this causes?",kw:""}],
-done:["Feature extractor built from MobileNetV2","Custom 2-category classifier trained","my_classifier function working","Tested on 3 new unseen images","Project summary written","Show Coach Penny: custom predictions on new images"],
+done:["Feature extractor built from MobileNetV2","Custom 2-category classifier trained","my_classifier function working","Tested on 3 new unseen images","Project summary written","Show coach: custom predictions on new images"],
 coach:"This is the hardest session in Project 3. If student struggles, ask: 'What has MobileNetV2 already learned?' and 'Can we borrow that knowledge?' The concept of using a pre-trained model as a feature extractor is key."},
 
 {proj:3,num:10,icon:"🤖",title:"AI Chatbot — design and rule-based foundation",desc:"Every chatbot starts with a design. Today you plan what your chatbot will do, who it's for, and build the rule-based logic before adding real AI.",time:["0–15 min: Research chatbots","15–40 min: Design your bot","40–68 min: Build rule-based version","68–75 min: Quiz"],
 phases:[
 {label:"Research and design",steps:[
 {n:1,title:"Understand different types of chatbots",body:`Ask Gemini: "What are the 3 main types of chatbots? What are the differences between rule-based, retrieval-based, and generative chatbots?"<div class="think-b">🤔 <strong>Think:</strong> Siri, customer service bots, and ChatGPT — which type is each? How do you know?</div>`},
-{n:2,title:"Design your chatbot on paper",body:`Choose a theme: movie recommender, quiz bot, homework helper, weather advisor, or your own idea. Write on paper:<br><br>1. Bot name and personality (friendly? formal? funny?)<br>2. 5 questions it should be able to answer<br>3. What it says when it doesn't understand<br>4. Opening greeting message<br><br><div class="warn-b">⚠️ Show this design to Coach Penny for approval before coding.</div>`}
+{n:2,title:"Design your chatbot on paper",body:`Choose a theme: movie recommender, quiz bot, homework helper, weather advisor, or your own idea. Write on paper:<br><br>1. Bot name and personality (friendly? formal? funny?)<br>2. 5 questions it should be able to answer<br>3. What it says when it doesn't understand<br>4. Opening greeting message<br><br><div class="warn-b">⚠️ Show this design to coach for approval before coding.</div>`}
 ]},
 {label:"Build rule-based chatbot",steps:[
 {n:3,title:"Build the basic response system",body:`Open Colab → New notebook → <code>ai_chatbot.ipynb</code><div class="code-b">def get_response(user_input):
@@ -637,7 +636,7 @@ print(f"Conversation ended after {conversation_count} messages.")</div>Have a fu
 ]}
 ],
 quiz:[{q:"What is the difference between a rule-based chatbot and a generative AI chatbot like ChatGPT?",kw:"rule"},{q:"Look at your fallback response. Why is a good fallback message important in a chatbot?",kw:""},{q:"Your bot uses if/elif/else. What is the problem with this approach when the bot needs to handle 1,000 different inputs?",kw:""}],
-done:["Chatbot design written on paper (approved by Coach Penny)","get_response function with 6+ rules","Conversation loop working","Tested with 8+ inputs, weaknesses listed","All quiz answers written"],
+done:["Chatbot design written on paper (approved by coach)","get_response function with 6+ rules","Conversation loop working","Tested with 8+ inputs, weaknesses listed","All quiz answers written"],
 coach:"The design document on paper is mandatory before coding. Ask: 'If your chatbot was a real person, how would they speak?' Check that student understands the fundamental limitation of rule-based bots."},
 
 {proj:3,num:11,icon:"🤖",title:"AI Chatbot — upgrade with the Gemini API",desc:"Rule-based bots break when users say unexpected things. Today you connect your chatbot to Gemini's API to give it real intelligence.",time:["0–15 min: APIs explained","15–50 min: Connect Gemini API","50–68 min: Combine rule + AI","68–75 min: Quiz"],
@@ -646,11 +645,11 @@ phases:[
 {n:1,title:"Learn what an API is",body:`Ask Gemini: "What is an API? Explain it like I've never heard the word before." Then: "How does an AI language model API work? What do I send and what do I get back?"<div class="think-b">🤔 <strong>Think:</strong> When you use Gemini right now, you type a message and get an answer. An API lets your Python code do the exact same thing. How is that useful for our chatbot?</div>`}
 ]},
 {label:"Connect Gemini API",steps:[
-{n:2,title:"Get and store your API key",body:`<div class="info-b">ℹ️ Coach Penny will give you the API key for this session. Never share your API key publicly or put it in code you share with others.</div><div class="code-b">!pip install google-generativeai -q
+{n:2,title:"Get and store your API key",body:`<div class="info-b">ℹ️ coach will give you the API key for this session. Never share your API key publicly or put it in code you share with others.</div><div class="code-b">!pip install google-generativeai -q
 
 import google.generativeai as genai
 
-API_KEY = "YOUR_KEY_HERE"  # Coach Penny will give you this
+API_KEY = "YOUR_KEY_HERE"  # coach will give you this
 genai.configure(api_key=API_KEY)
 
 ai_model = genai.GenerativeModel("gemini-1.5-flash")
@@ -740,7 +739,7 @@ while True:
 ]}
 ],
 quiz:[{q:"Why does your chatbot only remember the last 6 messages? What's the trade-off?",kw:""},{q:"What is error handling and why did we add it? Give one example of what could go wrong without it.",kw:"error"},{q:"Think about your chatbot being used by 1,000 real people. Name one way it could be used responsibly and one way it could cause harm.",kw:""}],
-done:["Conversation memory working and tested","10-message conversation demonstrated","Error handling added","Project documentation written","Show Coach Penny: full memory conversation + documentation"],
+done:["Conversation memory working and tested","10-message conversation demonstrated","Error handling added","Project documentation written","Show coach: full memory conversation + documentation"],
 coach:"The ethical question in documentation is important — take time to discuss it. Ensure student understands WHY history is passed in the prompt for memory to work."},
 
 {proj:4,num:13,icon:"🎮",title:"AI Game — build Rock Paper Scissors with a learning opponent",desc:"Games are a great way to understand AI strategy. You'll build Rock Paper Scissors where the computer learns your patterns and tries to beat you.",time:["0–15 min: Research","15–50 min: Base game","50–68 min: Pattern detection","68–75 min: Quiz"],
@@ -930,7 +929,7 @@ play_full_game(rounds=10)</div>`},
 ]}
 ],
 quiz:[{q:"Describe the Markov AI's strategy in plain English, as if explaining to someone who has never coded.",kw:""},{q:"You tested smart AI vs random AI. Which was harder to beat? Did that match what you expected?",kw:""},{q:"A player decides to play randomly on purpose. How does this affect your Markov AI? Is this a weakness?",kw:"random"}],
-done:["Full game with rounds, scores, game-over screen","play_full_game working with both AI modes","At least 3 full games played, 2 improvements made","Project documentation written","Show Coach Penny: complete game from start to game-over"],
+done:["Full game with rounds, scores, game-over screen","play_full_game working with both AI modes","At least 3 full games played, 2 improvements made","Project documentation written","Show coach: complete game from start to game-over"],
 coach:"Watch the student play their own game. Ask: 'Did the AI adapt to you? Could you feel it getting smarter?' Documentation must explain Markov logic in student's own words."},
 
 {proj:5,num:16,icon:"🚀",title:"Final Project — choose your idea and plan",desc:"This is your project. Choose something you genuinely want to build. You have 3 sessions to design, build, and present it. Session 16 is all about planning.",time:["0–20 min: Explore ideas","20–50 min: Plan and design","50–68 min: Research feasibility","68–75 min: Coach approval"],
@@ -954,7 +953,7 @@ OUTPUT (what comes out):
 WHICH PROJECT 1–5 IS IT MOST SIMILAR TO:
 LIBRARIES I WILL NEED:
 BIGGEST CHALLENGE I SEE:
-WHY I CHOSE THIS:</div><div class="warn-b">⚠️ You must get your project brief approved by Coach Penny before moving to Session 17.</div>`}
+WHY I CHOSE THIS:</div><div class="warn-b">⚠️ You must get your project brief approved by coach before moving to Session 17.</div>`}
 ]},
 {label:"Research and plan",steps:[
 {n:3,title:"Research your specific project",body:`For your chosen project, ask Gemini:<div class="code-b">"How would I build a [YOUR PROJECT] in Python? What steps would I take? What libraries would I need?"</div>Read carefully. Ask follow-up questions about anything you don't understand. Take notes — these become your plan.`},
@@ -981,7 +980,7 @@ except ImportError as e:
 ]}
 ],
 quiz:[{q:"Describe your final project in 3 sentences: what it does, what goes in, and what comes out.",kw:""},{q:"Which of the 5 previous projects is your final project most similar to? What will be different?",kw:""},{q:"What is the single hardest part of your project? What is your plan if you get stuck on it?",kw:""}],
-done:["Project idea chosen","Written project brief completed","Step-by-step plan written for Sessions 17–18","Libraries tested and working","COACH PENNY APPROVAL received before Session 17"],
+done:["Project idea chosen","Written project brief completed","Step-by-step plan written for Sessions 17–18","Libraries tested and working","coach APPROVAL received before Session 17"],
 coach:"Approve only projects that are (a) realistically completable in 2 sessions, (b) genuinely the student's own choice, (c) distinct enough from previous projects. If stuck on ideas, ask: 'What problem in your daily life could AI help with?'"},
 
 {proj:5,num:17,icon:"🚀",title:"Final Project — build it",desc:"Today you execute your plan from Session 16. Follow your steps, research what you need, and build as much of your project as possible.",time:["0–5 min: Review plan","5–60 min: Build","60–70 min: Test","70–75 min: Status check"],
@@ -992,18 +991,18 @@ phases:[
 {n:3,title:"Test as you build",body:`Every time you write a function, test it immediately:<div class="code-b"># After writing every function, test with a simple example:
 # result = my_function("test input")
 # print("Test result:", result)</div>Don't write 50 lines and then test. Write 10 lines, test, fix, continue. This is how real engineers work.`},
-{n:4,title:"Handle problems",body:`When something breaks:<br>1. Read the error message carefully — it usually tells you what went wrong<br>2. Ask Gemini: "I got this Python error: [paste the error]. What does it mean and how do I fix it?"<br>3. Try the fix<br>4. If still stuck after 5 minutes, call Coach Penny<div class="warn-b">⚠️ Write down every problem you hit and how you solved it. This is your debugging log — it counts as part of your project!</div>`},
+{n:4,title:"Handle problems",body:`When something breaks:<br>1. Read the error message carefully — it usually tells you what went wrong<br>2. Ask Gemini: "I got this Python error: [paste the error]. What does it mean and how do I fix it?"<br>3. Try the fix<br>4. If still stuck after 5 minutes, call coach<div class="warn-b">⚠️ Write down every problem you hit and how you solved it. This is your debugging log — it counts as part of your project!</div>`},
 {n:5,title:"End-of-session status check",body:`At the end of Session 17, write in your notebook:<div class="code-b">## Session 17 Status
 
 ### What I completed:
 ### What is still left for Session 18:
 ### Biggest problem I hit and how I solved it:
 ### Does my project work (at least partially)? YES / NO
-### What I need help with before Session 18:</div>Show this to Coach Penny.`}
+### What I need help with before Session 18:</div>Show this to coach.`}
 ]}
 ],
 quiz:[{q:"Pick the most important function in your project. Explain what it does in plain English.",kw:""},{q:"What was the hardest bug you hit today? How did you debug it?",kw:""},{q:"If you only had 30 more minutes to work on this project, what would you focus on and why?",kw:""}],
-done:["Followed Session 16 plan","Core functionality at least 70% complete","Tested each function as you built it","Debugging log written","Session 17 status check completed","Coach Penny has reviewed progress"],
+done:["Followed Session 16 plan","Core functionality at least 70% complete","Tested each function as you built it","Debugging log written","Session 17 status check completed","coach has reviewed progress"],
 coach:"Walk around and check every 10–15 minutes. Red flags: student silently copying from Gemini without understanding, or staring at screen without any output. Help debug — don't solve it for them."},
 
 {proj:5,num:18,icon:"🚀",title:"Final Project — finish, present, and reflect",desc:"The final session of the whole course! Finish your project, present it to the class, and reflect on everything you built over 18 sessions.",time:["0–40 min: Finish & polish","40–65 min: Presentations","65–75 min: Course reflection"],
@@ -1116,7 +1115,7 @@ function renderPanel(){
   s.done.forEach(d=>{ h+=`✓ ${d}<br>`; });
   h+=`</div></div>`;
 
-  h+=`<div class="coach-box"><div class="coach-t"><i class="ti ti-user-check" aria-hidden="true"></i> Coach Penny note (not for students)</div><div class="coach-l">${s.coach}</div></div>`;
+  h+=`<div class="coach-box"><div class="coach-t"><i class="ti ti-user-check" aria-hidden="true"></i> coach note (not for students)</div><div class="coach-l">${s.coach}</div></div>`;
 
   document.getElementById('panel').innerHTML=h;
 }
@@ -1130,7 +1129,7 @@ function chk(inputId,kw,fbId){
     fb.innerHTML='<span style="color:#854F0B">Good try! Make sure your answer includes the key idea. Re-read the step or ask Gemini, then update your answer.</span>';
     return;
   }
-  fb.innerHTML='<span style="color:#085041"><i class="ti ti-circle-check" style="font-size:14px;vertical-align:-2px" aria-hidden="true"></i> Great answer — show this to Coach Penny for sign-off!</span>';
+  fb.innerHTML='<span style="color:#085041"><i class="ti ti-circle-check" style="font-size:14px;vertical-align:-2px" aria-hidden="true"></i> Great answer — show this to coach for sign-off!</span>';
 }
 
 renderSess();
